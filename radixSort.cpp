@@ -5,7 +5,7 @@ using namespace std ;
 
 class queue{
  public :   int front = 0 ;
-            int rear = -1 ;
+            int rear = -1 ;////dudu
             int arr[10] ;
             int size ;
             int filled = 0 ;
