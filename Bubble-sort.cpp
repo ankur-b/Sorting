@@ -2,20 +2,16 @@
 using namespace std;
 void sort(int *a, int n) //a=>array, n=>length of array
 {
-    int i, j;  
+    int i, j, k;  
     for (i = 0; i < n-1; i++){
 	for (j = 0; j < n-i-1; j++){
-	    if (arr[j] > arr[j+1]){  
-            swap(&arr[j], &arr[j+1]);
+	    if (a[j] > a[j+1]){  
+            k = a[j];
+            a[j] = a[j+1];
+            a[j+1] = k;
 	    }
 	} 
     }
-}
-void swap(int *x, int *y)  
-{  
-    int temp = *x;  
-    *x = *y;  
-    *y = temp;  
 }
 int main() {
 	int i, n;
