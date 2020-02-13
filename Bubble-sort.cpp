@@ -2,21 +2,21 @@
 using namespace std;
 void sort(int *a, int n) //a=>array, n=>length of array
 {
- int i,j,t;
- for(i=0;i<n-1;i++)
- {
-  for(j=i+1;j<n;j++)
-  {
-   if(a[i]>a[j])
-   {
-   t=a[i];
-   a[i]=a[j];
-   a[j]=t;
-   }
-  }
- }
+    int i, j;  
+    for (i = 0; i < n-1; i++){
+	for (j = 0; j < n-i-1; j++){
+	    if (arr[j] > arr[j+1]){  
+            swap(&arr[j], &arr[j+1]);
+	    }
+	} 
+    }
 }
-
+void swap(int *x, int *y)  
+{  
+    int temp = *x;  
+    *x = *y;  
+    *y = temp;  
+}
 int main() {
 	int i, n;
 	cin>>n;
