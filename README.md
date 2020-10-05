@@ -11,3 +11,4 @@
     * Quick Sort
     * Radix Sort
 1. Java
+1. Python
