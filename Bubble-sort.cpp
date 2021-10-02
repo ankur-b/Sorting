@@ -5,7 +5,7 @@ void sort(int *a, int n) //a=>array, n=>length of array
  int i,j,t;
  for(i=0;i<n-1;i++)
  {
-  for(j=i+1;j<n;j++)
+  for(j=i;j<n-i-1;j++) //as last element of array gets automatically sorted.Thus, can be ignored.
   {
    if(a[i]>a[j])
    {
